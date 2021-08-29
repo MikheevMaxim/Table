@@ -60,3 +60,7 @@
     background-color: #d0cdcd;
     cursor: pointer;
 }
+
+.nextPage p {
+    margin-top: 6px;
+}

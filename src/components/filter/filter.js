@@ -9,6 +9,7 @@ const Filter = (props) => {
     let newConditionValue = React.createRef()
     let newInputValue = React.createRef()
 
+
     //Меняет значение в переменной columnValue
     const changeColumnValue = () => {
         columnValue = newColumnValue.current.value
@@ -22,8 +23,15 @@ const Filter = (props) => {
     const changeInputValue = () => {
         inputValue = newInputValue.current.value
     }
+    //Записывает фильтры в state и формирует массив с отфильтрованными строками при нажатии на Enter
+    const onKeyDown = (event) => {
+        if (event.keyCode === 13) {
+            search()
+        }
+    }
     //Записывает фильтры в state и формирует массив с отфильтрованными строками
     const search = () => {
+
         let filter = {
             column: columnValue,
             condition: conditionValue,
@@ -35,7 +43,7 @@ const Filter = (props) => {
 
     return (
         <div className={style.filter}>
-            <div className={style.filterMenu}>
+            <div onKeyDown={onKeyDown} className={style.filterMenu}>
                 <div className={style.column1}>
                     <p>Выбор колонки</p>
                     <select ref={newColumnValue}>
