@@ -1,0 +1,48 @@
+.table {
+    position: relative;
+    margin-top: 5vh;
+    border: 1px solid black;
+    width: 600px;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    color: black;
+
+}
+
+th {
+    /*border-radius: 5px;*/
+    border: 1px solid black;
+    background-color: #d0cdcd;
+}
+
+td {
+    /*border-radius: 5px;*/
+    border: black solid 1px;
+    margin: 0;
+}
+
+.filter {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: -6vh;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 5vh;
+    height: 5vh;
+}
+
+.filter p {
+    margin-top: 6px;
+}
+
+.filter:hover {
+    cursor: pointer;
+    background-color: #d0cdcd;
+}

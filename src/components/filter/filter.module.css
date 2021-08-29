@@ -1,0 +1,39 @@
+.filter {
+    position: absolute;
+    margin-top: 5vh;
+    border: 1px solid black;
+    width: 600px;
+    height: 90vh;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.74);
+    z-index: 1;
+}
+
+.filterMenu {
+    display: flex;
+    background-color: white;
+    width: 60%;
+    height: 27%;
+    border-radius: 5px;
+}
+
+.column1 {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.column2 {
+
+    border-left: black 1px solid;
+    width: 50%;
+    height: 100%;
+}
+
+.column2 input {
+    margin-top: 20px;
+}
+
+.column2 button {
+    margin-top: 20px;
+}
